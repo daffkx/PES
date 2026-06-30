@@ -1,3 +1,4 @@
+#Lista 2, Exercício 5
 numero = (int(input("Digite um número: ")))
 
 print(f"\nTabuada do número {numero}")

@@ -1,3 +1,4 @@
+#Lista 2, Exercício 10
 quantidade = 0 
 soma = 0 
 

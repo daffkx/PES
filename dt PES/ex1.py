@@ -1,3 +1,4 @@
+#Lista 1, Exercício 1
 valort=(int(input("Digite o valor total da compra: ")))
 if valort>=100:
     print("Você ganhou um cupom de desconto!")

@@ -1,3 +1,4 @@
+#Lista 2, Exercício 9
 deposito = (float(input("Digite o valor que você depositará mensalmente: ")))
 meses = (int(input("Digite a quantidade se meses: ")))
 taxa_juros = 0.005 #0,5% ao mês

@@ -1,3 +1,4 @@
+#Lista 1, Exercício 7
 dia = int(input("Digite o dia do seu nascimento: "))
 mes = int(input("Digite o mês do seu nascimento: "))
 

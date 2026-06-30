@@ -1,3 +1,4 @@
+#Lista 1, Exercício 5
 temp=(input("Digite a temperatura em Celsius: "))
 temp=float(temp)
 if temp<10:

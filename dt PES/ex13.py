@@ -1,3 +1,4 @@
+#Lista 2, Exercício 6
 numero = (int(input("Digite um número: ")))
 inicio = (int(input("Digite o número inicial: ")))
 fim = (int(input("Digite o número final: ")))

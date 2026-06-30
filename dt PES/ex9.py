@@ -1,3 +1,4 @@
+#Lista 2, Exercício 2
 contador = 10
 
 while contador >= 0:

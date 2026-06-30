@@ -1,3 +1,4 @@
+#Lista 1, Exercício 6
 player1=(input("Jogador 1, escolha pedra, papel ou tesoura: "))
 player2=(input("Jogador 2, escolha pedra, papel ou tesoura: "))
 if player1==player2:

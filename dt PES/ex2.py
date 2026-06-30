@@ -1,3 +1,4 @@
+#Lista 1, Exercício 2
 idade=(int(input("Digite sua idade: ")))
 if idade<10:
     print("Você pode assistir apenas a filmes com classificação Livre.")
