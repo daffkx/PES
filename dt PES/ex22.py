@@ -1,3 +1,4 @@
+#Lista 3, Exercício 3
 lista = [12, -1, -1, -1, -1, -1, -1, -1, -1, -1]
       #   0   1   2   3   4   5   6   7   8   9
 
@@ -5,7 +6,7 @@ opcao_escolhida = -1
 while opcao_escolhida != "0":
     print("""
         Menu
-        ----
+        --------
         1 – Cadastrar
         2 – Listar todos
         0 – Sair 
