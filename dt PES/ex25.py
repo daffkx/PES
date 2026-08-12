@@ -1,4 +1,8 @@
-#Lista 3, Exercício 5
+#Lista 3, Exercício 6
+
+#index = é a posição do elemento na lista
+#pop = remove o elemento da lista
+#len(nomes) = quantidade de elementos na lista
 
 nomes = []
 idades = []
@@ -12,6 +16,7 @@ while True:
     print("2 - Excluir")
     print("3 - Alterar")
     print("4 - Listar")
+    print("5 - Pesquisar")
     print("0 - Sair")
     print("-------")
     
@@ -34,16 +39,31 @@ while True:
         print("Cadastro realizado com sucesso!")
 
     elif opcao == 2:
-        nome = str(input("Digite o nome que seja excluído: "))
-        if nome in nomes:
-            indice = nomes.index(nome)  #index = é a posição do elemento na lista
-            nomes.pop(indice)  #pop = remove o elemento da lista
-            idades.pop(indice)
-            alturas.pop(indice)
-            pesos.pop(indice)
-            print("Cadastro excluído com sucesso!")
-        else:
-            print("Nome não encontrado.")
+        print("Excluir cadastro por nome(1) ou por código(2)?")
+        opcao_busca = int(input("Digite sua opção:"))
+
+        if opcao_busca == 1:
+             nome = str(input("Digite o nome que deseja excluir: "))
+             if nome in nomes:
+                indice = nomes.index(nome)  
+                nomes.pop(indice) 
+                idades.pop(indice)
+                alturas.pop(indice)
+                pesos.pop(indice)
+                print("Cadastro excluído com sucesso!")
+             else:
+                print("Nome não encontrado.")
+
+        elif opcao_busca == 2:
+            codigo = int(input("Digite o código que deseja excluir: "))
+            if 0 <= codigo < len(nomes):
+                nomes.pop(codigo)
+                idades.pop(codigo)
+                alturas.pop(codigo)
+                pesos.pop(codigo)
+                print("Cadastro excluído com sucesso!")
+            else:
+                print("Código não encontrado.")
 
     elif opcao == 3:
         nome = str(input("Digite o nome que deseja alterar: "))
@@ -61,8 +81,16 @@ while True:
             print("Nenhum cadastro encontrado.")
         else:
             print("Listagem de cadastros: ")
-            for i in range(len(nomes)):  #len(nomes) = quantidade de elementos na lista
+            for i in range(len(nomes)):  
                 print(f"Nome: {nomes[i]}, Idade: {idades[i]}, Altura: {alturas[i]}, Peso: {pesos[i]}")
+
+    elif opcao == 5:
+        nome = str(input("Digite o nome que deseja pesquisar: "))
+        if nome in nomes:
+            indice = nomes.index(nome)
+            print(f"Nome: {nomes[indice]}, Idade: {idades[indice]}, Altura: {alturas[indice]}, Peso: {pesos[indice]}")
+        else:
+            print("Nome não encontrado.")
 
     elif opcao == 0:
         print("Encerrando programa.")
