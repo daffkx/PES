@@ -1,9 +1,4 @@
 #Lista 4, Exercício 5
-#5 – Crie um programa que funcionará como um cadastro de Amigos Próximos no
-#Instagram. Seu programa deve permitir que amigos sejam cadastrados ou removidos,
-#conforme a solicitação do usuário. Também deve ser possível exibir a lista com todos os
-#amigos cadastrados, porém, o programa deve avisar o usuário caso a lista esteja vazia.
-
 cf = []
 
 while True:
@@ -26,3 +21,19 @@ while True:
         nome_add = str(input("Digite o nome do amigo que deseja adicionar: "))
         cf.append(nome_add)
         print("Amigo próximo adicionado com sucesso!")
+
+    elif opcao == 2:
+        nome_rem = str(input("Digite o nome do amigo que deseja remover: "))
+        if nome_rem in cf:
+            cf.remove(nome_rem)
+            print("Amigo próximo removido com sucesso!")
+        else:
+            print("Amigo não encontrado na lista.")
+
+    elif opcao == 3:
+        if len(cf) == 0:
+            print("A lista de amigos próximos está vazia.")
+        else:
+            print("Lista de amigos próximos:")
+            for amigo in cf:
+                print(amigo)

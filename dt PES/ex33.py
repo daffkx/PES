@@ -6,7 +6,7 @@ def listar_todos_professores():
 
 opcao = -1
 
-while opcao != 0 
+while opcao != 0:
     print("""
         [1] - Professor: adicionar
         [2] - Professor: Alterar
@@ -16,17 +16,3 @@ while opcao != 0
     """)
 
     opcao = int(input("Digite sua opção: "))
-
-    if opcao == 1:
-        cod = input("Qual é o código do professor?")
-        nome = input("Qual é o nome do professor?")
-
-        professores.append({
-            "cod" : cod,
-            "nome" : nome     
-        })
-    
-    elif opcao == 4:
-        indice = 0
-        while indice < len(professores):
-            print("professor: ")
