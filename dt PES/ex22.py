@@ -7,9 +7,9 @@ while opcao_escolhida != "0":
     print("""
         Menu
         --------
-        1 – Cadastrar
-        2 – Listar todos
-        0 – Sair 
+        1 - Cadastrar
+        2 - Listar todos
+        0 - Sair 
     """)
     opcao_escolhida = input("Digite sua opcão: ")
 
