@@ -12,3 +12,19 @@ while len(numeros) < 15:
 
 numeros_ordenados = sorted(numeros)
 print("Números armazenados em ordem crescente:", numeros_ordenados)
+
+# ===========================================
+
+# bingo = []
+# i = 15
+
+# while i >= 0:
+# 	numero = int(input("Digite um número: "))
+	
+# 	if numero >= 1 and numero <=75 and not numero in bingo:
+# 		bingo.append(numero)
+# 		i = i - 1
+
+# bingo. sort()
+
+# print(bingo)
