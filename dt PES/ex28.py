@@ -12,5 +12,5 @@ while i < len(notas):           #WHILE
     print(f"Nota: {notas[i]}")
     i += 1
 
-#for nota in notas:             #FOR
+# for nota in notas:             #FOR
 #   print(f"Nota: {nota}")

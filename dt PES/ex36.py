@@ -1,7 +1,5 @@
 #Lista 5, Exercício 2
 
-#usando print
-
 def impar_ou_par(valor):
     if (valor % 2) != 0:
         print("É ímpar")
