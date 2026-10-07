@@ -7,8 +7,8 @@ class pessoa:
         self.altura = altura
         self.peso = peso
 
-    def exibir(self):
-        print(self.nome, self.idade, self.altura, self.peso)
+    def mostrar_tudo(self):
+        return f"{self.nome}, {self.idade}, {self.altura}, {self.peso}"
 
     def imc(self):
         return self.peso / (self.altura ** 2)
@@ -17,14 +17,24 @@ class pessoa:
         return f"{self.nome} - IMC: {self.imc():.2f}"
     
 pessoa1 = pessoa("Dafne", 20, 1.70, 60)
-pessoa2 = pessoa("Mariana", 25, 1.80, 80)
-pessoa3 = pessoa("Veronica", 30, 1.60, 55)
+pessoa2 = pessoa("Tyler", 25, 1.80, 80)
+pessoa3 = pessoa("Josh", 30, 1.60, 55)
 
-pessoa1.exibir()
+pessoa1.mostrar_tudo()
+print(pessoa1.mostrar_tudo())
+
+pessoa2.mostrar_tudo()
+print(pessoa2.mostrar_tudo())
+
+pessoa3.mostrar_tudo()
+print(pessoa3.mostrar_tudo())
+
+
+pessoa1.mostrar_imc()
 print(pessoa1.mostrar_imc())
 
-pessoa2.exibir()
+pessoa2.mostrar_imc()
 print(pessoa2.mostrar_imc())
 
-pessoa3.exibir()
+pessoa3.mostrar_imc()
 print(pessoa3.mostrar_imc())

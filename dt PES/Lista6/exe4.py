@@ -6,19 +6,14 @@ class produto:
         self.quantidade = quantidade
 
     def esta_disponivel(self):
-        if self.quantidade > 0:
-            return True
-        else:
-            return False
-        
-    def vernder(self):
-        self.quantidade = self.quantidade - 1
+        return self.quantidade > 0
 
-produto1 = produto("Guitarra", 800)
+    def vender(self):
+        self.quantidade -= 1
 
-print(produto1.esta_disponivel())
+produto1 = produto("Guitarra", 4)
 
-produto1.vernder()
-produto1.vernder()
+produto1.vender()
 
 print(produto1.esta_disponivel())
+print(f"Quantidade disponível: {produto1.quantidade}")
