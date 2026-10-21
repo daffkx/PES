@@ -1,3 +1,5 @@
+#Lista 6, Exercício 10
+
 import pickle
 
 class Estudante:
